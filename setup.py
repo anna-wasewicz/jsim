@@ -5,7 +5,7 @@ setup(
     name="jsim",
 
     # Version number (initial):
-    version="1.0",
+    version="1.1",
 
     # Application author details:
     author="Anna Wasewicz",

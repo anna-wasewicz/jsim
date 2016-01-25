@@ -37,7 +37,7 @@ def getSimilarities(filename, docID, contents, threshold):
 	assert 0 <= threshold <= 1
 
 	with open(filename,"rb") as f:
-		posts = json.load(f)
+		posts = json.loads(f.read().decode())
 
 	formatCur = terms(contents)
 	posts = {i: terms(j) for i, j in posts.items()}
@@ -57,3 +57,4 @@ def getSimilarities(filename, docID, contents, threshold):
 			result.append(x)
 
 	return result
+
