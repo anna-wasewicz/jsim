@@ -51,7 +51,7 @@ def getSimilarities(filename, docID, contents, threshold):
 
 	result = []
 	for x in similarities:
-		if x[1] == docID:
+		if x[1] == str(docID):
 			continue
 		if x[0] >= threshold:
 			result.append(x)
